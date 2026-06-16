@@ -4,6 +4,7 @@ import Competitions from '../components/Competitions/Competitions';
 import UserJourney  from '../components/UserJourney/UserJourney';
 import AboutLeague  from '../components/AboutLeague/AboutLeague';
 import Categories   from '../components/Categories/Categories';
+import Disciplines  from '../components/Disciplines/Disciplines';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <UserJourney />
       <AboutLeague />
       <Categories />
-      
+      <Disciplines />
     </>
   );
 }

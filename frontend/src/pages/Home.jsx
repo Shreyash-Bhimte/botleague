@@ -5,6 +5,7 @@ import UserJourney  from '../components/UserJourney/UserJourney';
 import AboutLeague  from '../components/AboutLeague/AboutLeague';
 import Categories   from '../components/Categories/Categories';
 import Disciplines  from '../components/Disciplines/Disciplines';
+import Advantages   from '../components/Advantages/Advantages';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutLeague />
       <Categories />
       <Disciplines />
+      <Advantages />  
     </>
   );
 }

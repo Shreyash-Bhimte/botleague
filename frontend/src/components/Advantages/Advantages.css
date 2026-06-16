@@ -1,0 +1,42 @@
+.advantages-section { background: var(--black); }
+
+.advantages-inner {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: start;
+}
+
+.advantages-list { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+
+.advantage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.adv-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+.adv-title { font-family: var(--font-display); font-size: 17px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.adv-desc  { font-size: 13px; color: var(--gray); }
+
+/* Leaderboard */
+.leaderboard-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  position: sticky;
+  top: 80px;
+}
+.lb-label { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+.lb-score { font-family: var(--font-display); font-size: 42px; font-weight: 700; color: var(--yellow); margin-bottom: 20px; }
+
+.lb-rows { display: flex; flex-direction: column; gap: 10px; }
+.lb-row  { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.lb-rank { color: var(--yellow); font-weight: 700; width: 28px; }
+.lb-name { flex: 1; }
+.lb-pts  { color: var(--gray); font-size: 12px; }
+
+@media (max-width: 900px) {
+  .advantages-inner { grid-template-columns: 1fr; }
+  .leaderboard-card { position: static; }
+}

@@ -3,7 +3,6 @@ from database import events_collection
 
 router = APIRouter()
 
-# Seed some events if collection is empty
 def seed_events():
     if events_collection.count_documents({}) == 0:
         events_collection.insert_many([
@@ -12,10 +11,9 @@ def seed_events():
             {"name": "Event in Delhi", "location": "Delhi", "date": "2025-11-17", "category": "Line Follower", "status": "upcoming"},
         ])
 
-seed_events()
-
 @router.get("/events")
 def get_events():
+    seed_events()   # ← only runs when endpoint is called
     events = []
     for event in events_collection.find():
         events.append({

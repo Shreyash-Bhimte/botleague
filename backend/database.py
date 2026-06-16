@@ -8,4 +8,6 @@ client = MongoClient(os.getenv("MONGO_URI"))
 
 db = client["botleague"]
 
+users_collection = db["users"]
+
 print("MongoDB Connected Successfully")

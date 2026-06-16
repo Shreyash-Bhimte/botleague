@@ -11,3 +11,4 @@ db = client["botleague"]
 users_collection = db["users"]
 
 print("MongoDB Connected Successfully")
+print(os.getenv("MONGO_URI"))

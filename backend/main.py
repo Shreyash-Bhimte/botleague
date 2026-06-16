@@ -1,45 +1,20 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-from database import users_collection
+from fastapi.middleware.cors import CORSMiddleware
+from routes import users, events, registrations
 
-app = FastAPI()
+app = FastAPI(title="BotLeague API")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://botleague-rho.vercel.app", "http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-class User(BaseModel):
-    name: str
-    email: str
-
+app.include_router(users.router)
+app.include_router(events.router)
+app.include_router(registrations.router)
 
 @app.get("/")
 def root():
     return {"message": "BotLeague API Running"}
-
-
-@app.post("/register")
-def register(user: User):
-
-    users_collection.insert_one(
-        {
-            "name": user.name,
-            "email": user.email
-        }
-    )
-
-    return {"message": "User Registered Successfully"}
-
-
-@app.get("/users")
-def get_users():
-
-    users = []
-
-    for user in users_collection.find():
-
-        users.append(
-            {
-                "name": user["name"],
-                "email": user["email"]
-            }
-        )
-
-    return users

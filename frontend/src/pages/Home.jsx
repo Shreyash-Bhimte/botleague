@@ -2,7 +2,8 @@ import Navbar       from '../components/Navbar/Navbar';
 import Hero         from '../components/Hero/Hero';
 import Competitions from '../components/Competitions/Competitions';
 import UserJourney  from '../components/UserJourney/UserJourney';
-
+import AboutLeague  from '../components/AboutLeague/AboutLeague';
+import Categories   from '../components/Categories/Categories';
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <Hero />
       <Competitions />
       <UserJourney />
-      
+      <AboutLeague />
+      <Categories />
       
     </>
   );

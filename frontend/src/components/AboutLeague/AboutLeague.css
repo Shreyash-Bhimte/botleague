@@ -1,0 +1,28 @@
+.about-league { background: var(--dark); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  margin-top: 40px;
+}
+
+.about-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--yellow);
+  margin-bottom: 6px;
+}
+.about-item-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.about-item-desc { color: var(--gray); font-size: 14px; }
+
+@media (max-width: 600px) {
+  .about-grid { grid-template-columns: 1fr; gap: 28px; }
+}

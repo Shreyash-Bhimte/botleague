@@ -1,0 +1,45 @@
+.ecosystem-section { background: var(--dark); }
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.eco-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+}
+
+.eco-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.eco-form { display: flex; flex-direction: column; gap: 10px; }
+
+.eco-input {
+  width: 100%;
+  background: var(--dark);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.eco-input::placeholder { color: var(--gray); }
+.eco-input:focus { border-color: var(--yellow); }
+
+.eco-btn { margin-top: 6px; width: 100%; text-align: center; }
+
+@media (max-width: 768px) { .ecosystem-grid { grid-template-columns: 1fr; } }

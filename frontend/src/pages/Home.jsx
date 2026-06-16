@@ -6,6 +6,9 @@ import AboutLeague  from '../components/AboutLeague/AboutLeague';
 import Categories   from '../components/Categories/Categories';
 import Disciplines  from '../components/Disciplines/Disciplines';
 import Advantages   from '../components/Advantages/Advantages';
+import Ecosystem    from '../components/Ecosystem/Ecosystem';
+import Sponsors     from '../components/Sponsors/Sponsors';
+import Footer       from '../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +21,9 @@ export default function Home() {
       <Categories />
       <Disciplines />
       <Advantages />  
+      <Ecosystem />
+      <Sponsors />
+      <Footer />  
     </>
   );
 }

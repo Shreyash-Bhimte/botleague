@@ -1,0 +1,24 @@
+.sponsors-section { background: var(--black); }
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.sponsor-logo {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 28px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--light);
+  text-transform: uppercase;
+  transition: border-color 0.2s;
+}
+.sponsor-logo:hover { border-color: var(--yellow); color: var(--yellow); }

@@ -21,7 +21,7 @@ export default function Navbar() {
           <li><a href="#events">Events</a></li>
           <li><a href="#categories">Programs</a></li>
           <li><a href="#ecosystem">Community</a></li>
-          <li><a href="#sponsors">Raries</a></li>
+          <li><a href="#sponsors">Ranks</a></li>
         </ul>
 
         <div className="navbar-actions">

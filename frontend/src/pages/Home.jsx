@@ -1,8 +1,12 @@
+import Navbar       from '../components/Navbar/Navbar';
+import Hero         from '../components/Hero/Hero';
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-center mt-10">Welcome to BotLeague!</h1>
+      <Navbar />
+      <Hero />
+      
     </>
   );
 }

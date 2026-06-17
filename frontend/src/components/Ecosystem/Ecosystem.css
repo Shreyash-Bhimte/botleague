@@ -43,3 +43,7 @@
 .eco-btn { margin-top: 6px; width: 100%; text-align: center; }
 
 @media (max-width: 768px) { .ecosystem-grid { grid-template-columns: 1fr; } }
+
+.eco-msg         { margin-top: 8px; font-size: 13px; }
+.eco-msg.success { color: #4caf50; }
+.eco-msg.error   { color: #e03030; }
